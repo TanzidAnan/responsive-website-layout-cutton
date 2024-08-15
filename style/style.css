@@ -21,7 +21,7 @@
     
 }
 .nav-right{
-
+    display: flex;
 }
 span{
     margin-left: 8px;
@@ -42,6 +42,7 @@ span{
 /* header style */
 .header-container{
     background-image: url(../img/Group\ 14.png);
+    background-repeat: no-repeat;
 }
 .header-main{
     display: flex;
