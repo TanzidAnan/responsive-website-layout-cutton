@@ -85,3 +85,68 @@ span{
     background-color: #FF42A5;
     margin-right: 20px;
 }
+
+/* online section style */
+.online-main{
+    max-width: 1150px;
+    margin: 50px auto 0px;
+}
+.online-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.online-title span{
+    color: #F948B2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.online-card-main{
+    display: grid;
+    grid-template-areas: 
+    "a b c d"
+    ;
+    gap: 15px;
+}
+.online-card{
+    position: relative;
+}
+.online-card img{
+    width: 100%;
+    transition: .7s;
+}
+.online-card p{
+    font-size: 18px;
+    color: #534C64;
+}
+.card-1{
+    grid-area: a;
+}
+.card-2{
+    grid-area: b;
+}
+.card-3{
+    grid-area: c;
+}
+.card-4{
+    grid-area: d;
+}
+.watch-now{
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    text-align: center;
+    display: none;
+}
+.watch-now span{
+    font-size: 25px;
+    color: white;
+}
+.watch-now p{
+    font-size: 18px;
+    color: rgba(230, 5, 5, 0.893);
+}
+.online-card img:hover+.watch-now{
+    display: block;
+}
+.online-card img:hover{
+    filter: brightness(20%);
+}
